@@ -1,2 +1,3 @@
 # Xubuntu config
-fish
+fish 
+terminalrc
