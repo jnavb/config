@@ -1,1 +1,1 @@
-# background-generator
+# Xubuntu config
