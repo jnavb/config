@@ -1,1 +1,2 @@
 # Xubuntu config
+fish
