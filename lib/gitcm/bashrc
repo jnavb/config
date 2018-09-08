@@ -1,0 +1,7 @@
+git() {
+    if [ "$@ " == "cm " ]; then
+        commit
+    else
+        command git "$@"
+    fi
+}
