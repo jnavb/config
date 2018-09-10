@@ -1,6 +1,5 @@
 function git 
     if [ $argv[1] = "cm" ]
-        echo "YES"
         bash commit
     else
         command git $argv
