@@ -1,0 +1,15 @@
+# Insert your preferred key mappings here.
+map j scrollLeft
+map u scrollDown
+map d scrollUp
+map ñ scrollRight
+map J goBack
+map Ñ goForward
+map l scrollPageUp
+map k scrollPageDown
+map J  previousTab
+map K goBack
+map L  goForward
+map Ñ nextTab
+map p openCopiedUrlInNewTab
+map P openCopiedUrlInCurrentTab
