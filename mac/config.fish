@@ -1,4 +1,5 @@
 alias rm='rm -i'
+alias rimraf='rm -rf'
 alias mac-grid='tmux new-session \; split-window -v \; select-pane -t 0 \;'
 
 if status is-interactive
