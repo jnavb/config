@@ -1,7 +1,7 @@
 # Insert your preferred key mappings here.
 map j scrollLeft
-map u scrollDown
-map d scrollUp
+map u scrollUp
+map d scrollDown
 map ñ scrollRight
 map J goBack
 map Ñ goForward
