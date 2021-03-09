@@ -23,7 +23,7 @@
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -101,7 +101,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "right_command"
+                                    "key_code": "f19"
                                 },
                                 "to": [
                                     {
@@ -641,6 +641,16 @@
                     "to": [
                         {
                             "key_code": "escape"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "left_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f19"
                         }
                     ]
                 }
