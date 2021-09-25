@@ -1,25 +1,21 @@
-alias rm='rm -i'
-alias rimraf='rm -rf'
+# Removes fish greeting
+set fish_greeting
 
-alias linux-grid='tmux new-session \; split-window -v \; select-pane -t 0 \;'
-alias mac-grid='tmux new-session \; split-window -h \; select-pane -t 0 \;'
-
-function fish_prompt
-    powerline-shell --shell bare $status
+# Removes oh my fish time and hour 
+function fish_right_prompt
+  #intentionally left blank
 end
 
+# NVM things https://nicedoc.io/brigand/fast-nvm-fish
+set -U fish_user_paths
+nvm use 12.22.6
+
+alias rimraf='rm -rf'
+
+ssh-add $HOME/.ssh/flowable 2> /dev/null
+
+alias mac-grid='tmux new-session \;'
 if status is-interactive
 and not set -q TMUX
     mac-grid 
 end
-
-function cs
-	cd $argv
-	tmux run-shell -t 1 "clear & ls"
-end
-
-
-#MAC SETUP
-# set -x ANDROID_HOME /Users/jnavarro/Library/Android/sdk
-# set -x ANDROID_SDK_ROOT /Users/jnavarro/Library/Android/sdk
-# set -x ANDROID_AVD_HOME /Users/jnavarro/.android/avd
