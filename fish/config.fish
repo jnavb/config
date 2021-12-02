@@ -8,7 +8,7 @@ end
 
 # NVM things https://nicedoc.io/brigand/fast-nvm-fish
 set -U fish_user_paths
-nvm use 12.22.6
+nvm use 12 &> /dev/null
 
 alias rimraf='rm -rf'
 
