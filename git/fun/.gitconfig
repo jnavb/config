@@ -1,0 +1,5 @@
+[user]
+    name = Jorge Nanarro
+    email = jorgenavb@gmail.com
+[core]
+        sshCommand = ssh -i ~/.ssh/personal -F /dev/null

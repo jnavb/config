@@ -1,0 +1,5 @@
+[user]
+    name = Jorge Navarro
+    email = $WORK_MAIL
+[core]
+        sshCommand = ssh -i ~/.ssh/work -F /dev/null

@@ -2,23 +2,13 @@
 
 `git`
 
-`ssh-keygen -t ed25519 -C "jorgenavb@gmail.com"`
+`cd ~/ssh && ssh-keygen -t ed25519 -C "jorgenavb@gmail.com" -f personal`
 
-`ssh-keygen -t ed25519 -C "$WORK_MAIL"`
+`cd ~/.ssh && ssh-keygen -t ed25519 -C "$WORK_MAIL" -f work`
 
-`mkdir ~/work`
-
-`mkdir ~/fun`
-
-`mv $REPO/git/.gitconfig-work ~/work`
-
-`mv $REPO/git/.gitconfig-fun ~/fun`
+`cp $REPO/git/* ~`
 
 `git config --global core.editor "code --wait"`
-
-`git config --global user.name "Jorge Navarro"`
-
-
 
 # CLI tools
 
@@ -31,7 +21,7 @@ Tmux:
 
 `brew install tmux`
 
-`mv $REPO/tmux/.tmux.cong ~`
+`cp $REPO/tmux/.tmux.cong ~`
 
 `tmux kill-server || tmux` (reload config)
 
@@ -53,9 +43,17 @@ NVM-Fisher plugin to support NVM with fish:
 
 `fisher install FabioAntunes/fish-nvm edc/bass`
 
+TODO see if we can replace it for https://github.com/derekstavis/plugin-nvm
+
+Oh my fish
+
+`curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
+
+
+
 Fish config (Last step):
 
-`mv $REPO/fish/config.fish ~/.config/fish`
+`cp $REPO/fish/config.fish ~/.config/fish`
 
 
 # Karabiner - [Download](https://karabiner-elements.pqrs.org/)
@@ -65,8 +63,6 @@ Config
  `cp $REPO/karabiner/karabiner.json ~/.config/karabiner/`
  
  `cp $REPO/karabiner/assets/complex_modifications/* ~/.config/karabiner/assets/complex_modifications`
-
-TODO Fix cmd + vim
 
 # Flycut - [Download](https://github.com/TermiT/Flycut/releases)
 
@@ -88,7 +84,9 @@ TODO Fix cmd + vim
 
 
 
-iterm
+# iTerm - [Download](https://iterm2.com/downloads.html)
+
+TODO Config
 
 vscode Settings
 
