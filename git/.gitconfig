@@ -1,7 +1,5 @@
 [user]
 	name = Jorge Navarro
-[credential]
-	helper = osxkeychain
 [includeIf "gitdir:~/fun/"]
   path = ~/.gitconfig-fun
 [includeIf "gitdir:~/work/"]

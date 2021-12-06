@@ -23,7 +23,7 @@
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ],
                                         "optional": [
                                             "any"
@@ -478,6 +478,28 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Map Left Option + Spacebar to Enter",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -636,21 +658,21 @@
                 },
                 {
                     "from": {
-                        "key_code": "right_shift"
-                    },
-                    "to": [
-                        {
-                            "key_code": "escape"
-                        }
-                    ]
-                },
-                {
-                    "from": {
                         "key_code": "left_option"
                     },
                     "to": [
                         {
                             "key_code": "f19"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_shift"
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
                         }
                     ]
                 }

@@ -1,45 +1,97 @@
-Setup Keyboard Option key
+# Git
 
-Install node y nvm
+`git`
 
-1. Open terminal and install
+`ssh-keygen -t ed25519 -C "jorgenavb@gmail.com"`
 
-    Git: `git`
+`ssh-keygen -t ed25519 -C "$WORK_MAIL"`
 
-    Brew: 
+`mkdir ~/work`
+
+`mkdir ~/fun`
+
+`mv $REPO/git/.gitconfig-work ~/work`
+
+`mv $REPO/git/.gitconfig-fun ~/fun`
+
+`git config --global core.editor "code --wait"`
+
+`git config --global user.name "Jorge Navarro"`
+
+
+
+# CLI tools
+
+Brew: 
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+
+Tmux:
+
+`brew install tmux`
+
+`mv $REPO/tmux/.tmux.cong ~`
+
+`tmux kill-server || tmux` (reload config)
+
+Nvm: 
+
+[Install with this command](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+`nvm install 12 && nvm install 16`
+
+Fish:
     
-    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+`brew install fish`
+
+`echo fish >> .zshrc`
+
+NVM-Fisher plugin to support NVM with fish:
+
+`curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher`
+
+`fisher install FabioAntunes/fish-nvm edc/bass`
+
+Fish config (Last step):
+
+`mv $REPO/fish/config.fish ~/.config/fish`
 
 
-    Tmux:
+# Karabiner - [Download](https://karabiner-elements.pqrs.org/)
 
-    `brew install tmux`
+Config
 
-    Nvm: 
-    
-    [Install with this command](https://github.com/nvm-sh/nvm#installing-and-updating)
+ `cp $REPO/karabiner/karabiner.json ~/.config/karabiner/`
+ 
+ `cp $REPO/karabiner/assets/complex_modifications/* ~/.config/karabiner/assets/complex_modifications`
 
-    `nvm install 12 && nvm install 16`
+TODO Fix cmd + vim
 
-    Fish:
-        
-    `brew install fish`
+# Flycut - [Download](https://github.com/TermiT/Flycut/releases)
 
-    `echo fish >> .zshrc`
+# Rectangle - [Download](https://rectangleapp.com/)
 
-    NVM-Fisher plugin to support NVM with fish:
-
-    `curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher`
-
-    `fisher install FabioAntunes/fish-nvm edc/bass`
-
-    Fish config (Last step):
-
-    `mv $REPO/fish/config.fish $HOME/.config/fish`
-
-2. 
+`cp rectangle/com.knollsoft.Rectangle.plist ~/Library/Preferences`
 
 
-git config --global core.editor "code --wait"
+# Brave - [Download](https://brave.com/es/)
 
-git config --global user.name "Jorge Navarro"
+# Chromium extensions
+
+- [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+
+- [Dark reader](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=es)
+
+- [Picture in picture](https://chrome.google.com/webstore/detail/picture-in-picture-extens/hkgfoiooedgoejojocmhlaklaeopbecg)
+
+
+
+
+iterm
+
+vscode Settings
+
+# Thor - [Download](https://apps.apple.com/cn/app/thor/id1120999687?l=en&mt=12)
+
+System preferences Login Items
