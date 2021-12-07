@@ -10,12 +10,13 @@
 
 `git config --global core.editor "code --wait"`
 
+`git config --global pull.rebase true`
+
 # CLI tools
 
 Brew: 
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-
 
 Tmux:
 
@@ -25,46 +26,53 @@ Tmux:
 
 `tmux kill-server || tmux` (reload config)
 
-Nvm: 
+Java and Maven with Sdkman:
 
-[Install with this command](https://github.com/nvm-sh/nvm#installing-and-updating)
+`curl -s https://get.sdkman.io | bash`
 
-`nvm install 12 && nvm install 16`
+`sdk install java && sdk install maven`
 
 Fish:
     
 `brew install fish`
 
-`echo fish >> .zshrc`
-
-NVM-Fisher plugin to support NVM with fish:
-
-`curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher`
-
-`fisher install FabioAntunes/fish-nvm edc/bass`
-
-TODO see if we can replace it for https://github.com/derekstavis/plugin-nvm
 
 Oh my fish
 
 `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
 
+NVM and SDKMAN for fish:
 
+`curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher`
 
-Fish config (Last step):
+`fisher install jorgebucaran/nvm.fish`
+
+`nvm install 16`
+
+`fisher install reitzig/sdkman-for-fish@v1.4.0`
+
+Yarn:
+
+`npm install --global yarn`
+
+Fish init and config (Last step):
+
+`echo fish >> ~/.zshrc`
 
 `cp $REPO/fish/config.fish ~/.config/fish`
 
 
+# Docker - [Download](https://docs.docker.com/desktop/mac/install/)
+
 # Karabiner - [Download](https://karabiner-elements.pqrs.org/)
 
-Config
+`cp $REPO/karabiner/karabiner.json ~/.config/karabiner/`
 
- `cp $REPO/karabiner/karabiner.json ~/.config/karabiner/`
- 
- `cp $REPO/karabiner/assets/complex_modifications/* ~/.config/karabiner/assets/complex_modifications`
+`cp $REPO/karabiner/assets/complex_modifications/* ~/.config/karabiner/assets/complex_modifications`
+
 
 # Flycut - [Download](https://github.com/TermiT/Flycut/releases)
+
 
 # Rectangle - [Download](https://rectangleapp.com/)
 
@@ -73,23 +81,39 @@ Config
 
 # Brave - [Download](https://brave.com/es/)
 
+
 # Chromium extensions
 
-- [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+- [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) - [Config](./vimium/vimium)
 
 - [Dark reader](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=es)
 
 - [Picture in picture](https://chrome.google.com/webstore/detail/picture-in-picture-extens/hkgfoiooedgoejojocmhlaklaeopbecg)
 
 
-
-
 # iTerm - [Download](https://iterm2.com/downloads.html)
 
-TODO Config
+[Import Profile](./iterm2/jorge.json)
 
-vscode Settings
+Import color scheme:
+
+```
+git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git \
+&& cd iTerm2-Color-Schemes \
+&& tools/import-scheme.sh 'deep'
+```
 
 # Thor - [Download](https://apps.apple.com/cn/app/thor/id1120999687?l=en&mt=12)
 
-System preferences Login Items
+# Wallpapers - [Download](https://mega.nz/#!9Usk2R5R!KmEUa5xu8dLtkppsSeG0JC61PgrH67ObJ4h0KwKLzTU)
+
+
+Spotlight macOS Commands
+
+`cp $REPO/Applications/* ~/Applications`
+
+System preferences > Keyboards > Shortcuts > Check 'Use keyboard navigation to move focus between controls'
+
+``
+
+vscode Settings (Copy from ol macbook)

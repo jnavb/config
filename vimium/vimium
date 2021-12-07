@@ -7,9 +7,9 @@ map J goBack
 map Ñ goForward
 map l scrollPageUp
 map k scrollPageDown
-map J  previousTab
+map J previousTab
 map K goBack
-map L  goForward
+map L goForward
 map Ñ nextTab
 map p openCopiedUrlInNewTab
 map P openCopiedUrlInCurrentTab
