@@ -1,0 +1,68 @@
+{
+
+    "typescript.preferences.quoteStyle": "single",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+    },
+    "workbench.editor.enablePreview": false,
+    "editor.rulers": [130],
+    "gitlens.remotes": [
+        {
+            "domain": "code.flowable.com",
+            "type": "GitLab",
+            "urls": {
+                "repository": "https://code.flowable.com/flw-lic/flowable-product/flowable-platform/${repo}",
+                "branches": "https://code.flowable.com/flw-lic/flowable-product/flowable-platform/${repo}/branches",
+                "branch": "https://code.flowable.com/flw-lic/flowable-product/flowable-platform/${repo}/commits/${branch}",
+                "commit": "https://code.flowable.com/flw-lic/flowable-product/flowable-platform/${repo}/commit/${id}",
+                "file": "https://code.flowable.com/flw-lic/flowable-product/flowable-platform/${repo}?path=${file}${line}",
+                "fileInBranch": "https://code.flowable.com/flw-lic/flowable-product/flowable-platform/${repo}/blob/${branch}/${file}${line}",
+                "fileInCommit": "https://code.flowable.com/flw-lic/flowable-product/flowable-platform/${repo}/blob/${id}/${file}${line}",
+                "fileLine": "#L${line}",
+                "fileRange": "#L${start}-L${end}"
+            }
+        }
+    ],
+
+    "files.exclude": {
+        "**/.git": true,         // this is a default value
+        "**/.DS_Store": true,    // this is a default value
+
+        "**/node_modules": true, // this excludes all folders 
+                                // named "node_modules" from 
+                                // the explore tree
+
+        // alternative version
+        "node_modules": true    // this excludes the folder 
+                                // only from the root of
+                                // your workspace 
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "i18n-ally.displayLanguage": "en",
+    "javascript.inlayHints.enumMemberValues.enabled": true,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "workbench.startupEditor": "none",
+    "vscOrganizeImports.formatOnSave": false,
+    "liveshare.presence": true,
+    "liveshare.audio.startCallOnShare": true,
+    // "i18n-ally.translate.google.apiKey": "AIzaSyDdzF2sd8wdNrtidrEhF9XjPeIP7ZGW3fw"
+
+}

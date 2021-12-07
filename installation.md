@@ -108,12 +108,21 @@ git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git \
 # Wallpapers - [Download](https://mega.nz/#!9Usk2R5R!KmEUa5xu8dLtkppsSeG0JC61PgrH67ObJ4h0KwKLzTU)
 
 
-Spotlight macOS Commands
+# Spotlight Commands
 
 `cp $REPO/Applications/* ~/Applications`
 
+# System preferences
 System preferences > Keyboards > Shortcuts > Check 'Use keyboard navigation to move focus between controls'
 
-``
 
-vscode Settings (Copy from ol macbook)
+
+
+
+
+
+
+# Visual Studio Code - [Download](https://code.visualstudio.com/download)
+
+Settings: 
+`cp vscode/* $HOME/Library/Application\ Support/Code/User/`
