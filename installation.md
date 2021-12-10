@@ -115,6 +115,8 @@ git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git \
 # System preferences
 System preferences > Keyboards > Shortcuts > Check 'Use keyboard navigation to move focus between controls'
 
+`defaults write com.apple.finder CreateDesktop false && killall Finder`
+
 
 
 
