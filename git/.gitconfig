@@ -4,3 +4,7 @@
   path = ~/.gitconfig-fun
 [includeIf "gitdir:~/work/"]
   path = ~/.gitconfig-work
+[core]
+	editor = code --wait
+[pull]
+	rebase = true
