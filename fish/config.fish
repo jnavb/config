@@ -6,7 +6,7 @@ function fish_right_prompt
   #intentionally left blank
 end
 
-nvm use 12 &> /dev/null
+nvm use 16 &> /dev/null
 
 alias rimraf='rm -rf'
 
