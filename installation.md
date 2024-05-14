@@ -110,7 +110,7 @@ git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git \
 
 # Spotlight Commands
 
-`cp $REPO/Applications/* ~/Applications`
+Use shortcut app
 
 # System preferences
 System preferences > Keyboards > Shortcuts > Check 'Use keyboard navigation to move focus between controls'
