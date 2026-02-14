@@ -9,12 +9,16 @@ AGENT_PANE="$TMUX_PANE"
 # Window and session where the agent lives
 AGENT_WINDOW=$(tmux display-message -t "$AGENT_PANE" -p '#{window_index}')
 AGENT_SESSION=$(tmux display-message -t "$AGENT_PANE" -p '#{session_name}')
+ACTIVE_PANE=$(tmux display-message -t "$AGENT_SESSION:$ACTIVE_WINDOW" -p '#{pane_id}')
 
 # Currently active window in that session
 ACTIVE_WINDOW=$(tmux display-message -t "$AGENT_SESSION" -p '#{window_index}')
 
 # Only highlight if the user is on the same window
 [ "$AGENT_WINDOW" != "$ACTIVE_WINDOW" ] && exit 0
+
+# Only highlight if the agent pane is the selected one
+[ "$AGENT_PANE" != "$ACTIVE_PANE" ] && exit 0
 
 # Set the agent pane's background color without changing focus
 tmux select-pane -d -t "$AGENT_PANE" -P 'bg=#29291a'
