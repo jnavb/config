@@ -1,0 +1,73 @@
+{
+  "attribution": {},
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "NotebookEdit",
+      "Bash(cursor)",
+      "Bash(open)",
+      "Bash(git *)",
+      "Bash(yarn *)",
+      "Bash(ls *)",
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(awk *)",
+      "Bash(sed *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(find *)",
+      "Bash(wc *)",
+      "Bash(diff *)",
+      "Bash(sort *)",
+      "Bash(uniq *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(echo *)",
+      "Bash(pwd)",
+      "Bash(which *)",
+      "Bash(node *)",
+      "Bash(npx *)",
+      "Bash(open *)",
+      "Bash(date)",
+      "Bash(ps *)",
+      "Bash(df -h)",
+      "Bash(du *)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "touch $HOME/.config/jorgeAgents/$(tmux display-message -t $TMUX_PANE -p '#{session_name}-#{window_index}-#{pane_index}')"
+          }
+        ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/stop-tmux-highlight.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "ralph-wiggum@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true
+  },
+  "skipDangerousModePermissionPrompt": true
+}
